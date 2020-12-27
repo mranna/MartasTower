@@ -4,7 +4,7 @@ const data = {
       _id: "1",
       name: "Princess Party Supplies",
       category: "Kids",
-      image: "/images/Hemanth.jpg",
+      image: "/images/Product1/Product1.1.jpeg",
       price: 130,
       countInStock: 10,
       rating: 4.5,
