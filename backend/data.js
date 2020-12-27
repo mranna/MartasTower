@@ -1,10 +1,24 @@
+import bcrypt from "bcryptjs";
 const data = {
+  users: [
+    {
+      name: "Marta",
+      email: "look4meanil@gmail.com",
+      password: bcrypt.hashSync("1234", 8),
+      isAdmin: true,
+    },
+    {
+      name: "Hemanth",
+      email: "user@gmail.com",
+      password: bcrypt.hashSync("1234", 8),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
-      _id: "1",
       name: "Princess Party Supplies",
       category: "Kids",
-      image: "/images/Hemanth.jpg",
+      image: "/images/Product1/Product1.1.jpeg",
       price: 130,
       countInStock: 10,
       rating: 4.5,
@@ -12,10 +26,9 @@ const data = {
       description: "Most selling product",
     },
     {
-      _id: "2",
       name: "Wedding Supplies",
       category: "Adult",
-      image: "/images/pic1.png",
+      image: "/images/Product2/Product2.1.jpeg",
       price: 200,
       countInStock: 10,
       rating: 5.0,
@@ -23,10 +36,9 @@ const data = {
       description: "Most selling product",
     },
     {
-      _id: "3",
       name: "Birthday Party Supplies",
       category: "Kids",
-      image: "/images/pic1.png",
+      image: "/images/Product3/Product3.1.jpeg",
       price: 150,
       countInStock: 0,
       rating: 4.5,
@@ -34,7 +46,6 @@ const data = {
       description: "Most selling product",
     },
     {
-      _id: "4",
       name: "Valentines Supplies",
       category: "Adult",
       image: "/images/pic1.png",
@@ -45,7 +56,6 @@ const data = {
       description: "Most selling product",
     },
     {
-      _id: "5",
       name: "School Party Supplies",
       category: "Kids",
       image: "/images/pic1.png",
